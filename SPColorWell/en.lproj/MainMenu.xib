@@ -1322,7 +1322,7 @@
 				<int key="NSWindowBacking">2</int>
 				<string key="NSWindowRect">{{335, 390}, {480, 395}}</string>
 				<int key="NSWTFlags">1954021376</int>
-				<string key="NSWindowTitle">SPImageWell</string>
+				<string key="NSWindowTitle">SPColorWell</string>
 				<string key="NSWindowClass">NSWindow</string>
 				<nil key="NSViewClass"/>
 				<object class="NSView" key="NSWindowView" id="439893737">
@@ -1343,9 +1343,33 @@
 										<object class="NSTextView" id="393053487">
 											<reference key="NSNextResponder" ref="70036546"/>
 											<int key="NSvFlags">2322</int>
+											<object class="NSMutableSet" key="NSDragTypes">
+												<bool key="EncodedWithXMLCoder">YES</bool>
+												<object class="NSArray" key="set.sortedObjects">
+													<bool key="EncodedWithXMLCoder">YES</bool>
+													<string>Apple HTML pasteboard type</string>
+													<string>Apple PDF pasteboard type</string>
+													<string>Apple PICT pasteboard type</string>
+													<string>Apple PNG pasteboard type</string>
+													<string>Apple URL pasteboard type</string>
+													<string>CorePasteboardFlavorType 0x6D6F6F76</string>
+													<string>NSColor pasteboard type</string>
+													<string>NSFilenamesPboardType</string>
+													<string>NSStringPboardType</string>
+													<string>NeXT Encapsulated PostScript v1.2 pasteboard type</string>
+													<string>NeXT RTFD pasteboard type</string>
+													<string>NeXT Rich Text Format v1.0 pasteboard type</string>
+													<string>NeXT TIFF v4.0 pasteboard type</string>
+													<string>NeXT font pasteboard type</string>
+													<string>NeXT ruler pasteboard type</string>
+													<string>WebURLsWithTitlesPboardType</string>
+													<string>public.url</string>
+												</object>
+											</object>
 											<string key="NSFrameSize">{465, 336}</string>
 											<reference key="NSSuperview" ref="70036546"/>
-											<reference key="NSNextKeyView" ref="555767103"/>
+											<reference key="NSWindow"/>
+											<reference key="NSNextKeyView" ref="168551386"/>
 											<object class="NSTextContainer" key="NSTextContainer" id="40802623">
 												<object class="NSLayoutManager" key="NSLayoutManager">
 													<object class="NSTextStorage" key="NSTextStorage">
@@ -1524,6 +1548,7 @@ dHJlbnoga2lwZyBuYWFyIG1peGVudCBwaG9uYS4</bytes>
 									</object>
 									<string key="NSFrame">{{1, 1}, {465, 365}}</string>
 									<reference key="NSSuperview" ref="333640599"/>
+									<reference key="NSWindow"/>
 									<reference key="NSNextKeyView" ref="393053487"/>
 									<reference key="NSDocView" ref="393053487"/>
 									<reference key="NSBGColor" ref="693394096"/>
@@ -1538,6 +1563,8 @@ dHJlbnoga2lwZyBuYWFyIG1peGVudCBwaG9uYS4</bytes>
 									<int key="NSvFlags">256</int>
 									<string key="NSFrame">{{466, 1}, {15, 365}}</string>
 									<reference key="NSSuperview" ref="333640599"/>
+									<reference key="NSWindow"/>
+									<reference key="NSNextKeyView"/>
 									<reference key="NSTarget" ref="333640599"/>
 									<string key="NSAction">_doScroller:</string>
 									<double key="NSCurValue">1</double>
@@ -1548,6 +1575,7 @@ dHJlbnoga2lwZyBuYWFyIG1peGVudCBwaG9uYS4</bytes>
 									<int key="NSvFlags">-2147483392</int>
 									<string key="NSFrame">{{-100, -100}, {87, 18}}</string>
 									<reference key="NSSuperview" ref="333640599"/>
+									<reference key="NSWindow"/>
 									<reference key="NSNextKeyView" ref="70036546"/>
 									<int key="NSsFlags">1</int>
 									<reference key="NSTarget" ref="333640599"/>
@@ -1558,7 +1586,8 @@ dHJlbnoga2lwZyBuYWFyIG1peGVudCBwaG9uYS4</bytes>
 							</object>
 							<string key="NSFrame">{{-1, -1}, {482, 367}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
-							<reference key="NSNextKeyView" ref="70036546"/>
+							<reference key="NSWindow"/>
+							<reference key="NSNextKeyView" ref="555767103"/>
 							<int key="NSsFlags">18</int>
 							<reference key="NSVScroller" ref="168551386"/>
 							<reference key="NSHScroller" ref="555767103"/>
@@ -1569,12 +1598,14 @@ dHJlbnoga2lwZyBuYWFyIG1peGVudCBwaG9uYS4</bytes>
 							<int key="NSvFlags">265</int>
 							<string key="NSFrame">{{434, 372}, {30, 18}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
+							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="333640599"/>
 							<string key="NSClassName">SPColorWell</string>
 						</object>
 					</object>
 					<string key="NSFrame">{{7, 11}, {480, 395}}</string>
 					<reference key="NSSuperview"/>
+					<reference key="NSWindow"/>
 					<reference key="NSNextKeyView" ref="1037462476"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1280, 778}}</string>
