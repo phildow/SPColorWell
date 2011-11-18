@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7219BD0B1476DEA400AE298F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7219BD0A1476DEA400AE298F /* Cocoa.framework */; };
+		7219BD151476DEA400AE298F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7219BD131476DEA400AE298F /* InfoPlist.strings */; };
+		7219BD181476DEA400AE298F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7219BD171476DEA400AE298F /* main.m */; };
+		7219BD1B1476DEA400AE298F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7219BD191476DEA400AE298F /* Credits.rtf */; };
+		7219BD1E1476DEA400AE298F /* SPColorWellAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7219BD1D1476DEA400AE298F /* SPColorWellAppDelegate.m */; };
+		7219BD211476DEA400AE298F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7219BD1F1476DEA400AE298F /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7219BD061476DEA400AE298F /* SPColorWell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPColorWell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7219BD0A1476DEA400AE298F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		7219BD0D1476DEA400AE298F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		7219BD0E1476DEA400AE298F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7219BD0F1476DEA400AE298F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7219BD121476DEA400AE298F /* SPColorWell-Info.plist */ = {isa = PBXFileReference; path = "SPColorWell-Info.plist"; sourceTree = "<group>"; };
+		7219BD141476DEA400AE298F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7219BD161476DEA400AE298F /* SPColorWell-Prefix.pch */ = {isa = PBXFileReference; path = "SPColorWell-Prefix.pch"; sourceTree = "<group>"; };
+		7219BD171476DEA400AE298F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7219BD1A1476DEA400AE298F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		7219BD1C1476DEA400AE298F /* SPColorWellAppDelegate.h */ = {isa = PBXFileReference; path = SPColorWellAppDelegate.h; sourceTree = "<group>"; };
+		7219BD1D1476DEA400AE298F /* SPColorWellAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPColorWellAppDelegate.m; sourceTree = "<group>"; };
+		7219BD201476DEA400AE298F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7219BD031476DEA400AE298F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7219BD0B1476DEA400AE298F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7219BCFB1476DEA400AE298F = {
+			isa = PBXGroup;
+			children = (
+				7219BD101476DEA400AE298F /* SPColorWell */,
+				7219BD091476DEA400AE298F /* Frameworks */,
+				7219BD071476DEA400AE298F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7219BD071476DEA400AE298F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7219BD061476DEA400AE298F /* SPColorWell.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7219BD091476DEA400AE298F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7219BD0A1476DEA400AE298F /* Cocoa.framework */,
+				7219BD0C1476DEA400AE298F /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7219BD0C1476DEA400AE298F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7219BD0D1476DEA400AE298F /* AppKit.framework */,
+				7219BD0E1476DEA400AE298F /* CoreData.framework */,
+				7219BD0F1476DEA400AE298F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		7219BD101476DEA400AE298F /* SPColorWell */ = {
+			isa = PBXGroup;
+			children = (
+				7219BD1C1476DEA400AE298F /* SPColorWellAppDelegate.h */,
+				7219BD1D1476DEA400AE298F /* SPColorWellAppDelegate.m */,
+				7219BD1F1476DEA400AE298F /* MainMenu.xib */,
+				7219BD111476DEA400AE298F /* Supporting Files */,
+			);
+			path = SPColorWell;
+			sourceTree = "<group>";
+		};
+		7219BD111476DEA400AE298F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7219BD121476DEA400AE298F /* SPColorWell-Info.plist */,
+				7219BD131476DEA400AE298F /* InfoPlist.strings */,
+				7219BD161476DEA400AE298F /* SPColorWell-Prefix.pch */,
+				7219BD171476DEA400AE298F /* main.m */,
+				7219BD191476DEA400AE298F /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7219BD051476DEA400AE298F /* SPColorWell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7219BD241476DEA400AE298F /* Build configuration list for PBXNativeTarget "SPColorWell" */;
+			buildPhases = (
+				7219BD021476DEA400AE298F /* Sources */,
+				7219BD031476DEA400AE298F /* Frameworks */,
+				7219BD041476DEA400AE298F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SPColorWell;
+			productName = SPColorWell;
+			productReference = 7219BD061476DEA400AE298F /* SPColorWell.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7219BCFD1476DEA400AE298F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Sprouted;
+			};
+			buildConfigurationList = 7219BD001476DEA400AE298F /* Build configuration list for PBXProject "SPColorWell" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7219BCFB1476DEA400AE298F;
+			productRefGroup = 7219BD071476DEA400AE298F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7219BD051476DEA400AE298F /* SPColorWell */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7219BD041476DEA400AE298F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7219BD151476DEA400AE298F /* InfoPlist.strings in Resources */,
+				7219BD1B1476DEA400AE298F /* Credits.rtf in Resources */,
+				7219BD211476DEA400AE298F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7219BD021476DEA400AE298F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7219BD181476DEA400AE298F /* main.m in Sources */,
+				7219BD1E1476DEA400AE298F /* SPColorWellAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7219BD131476DEA400AE298F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7219BD141476DEA400AE298F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7219BD191476DEA400AE298F /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7219BD1A1476DEA400AE298F /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		7219BD1F1476DEA400AE298F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7219BD201476DEA400AE298F /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7219BD221476DEA400AE298F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7219BD231476DEA400AE298F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7219BD251476DEA400AE298F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SPColorWell/SPColorWell-Prefix.pch";
+				INFOPLIST_FILE = "SPColorWell/SPColorWell-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7219BD261476DEA400AE298F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SPColorWell/SPColorWell-Prefix.pch";
+				INFOPLIST_FILE = "SPColorWell/SPColorWell-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7219BD001476DEA400AE298F /* Build configuration list for PBXProject "SPColorWell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7219BD221476DEA400AE298F /* Debug */,
+				7219BD231476DEA400AE298F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7219BD241476DEA400AE298F /* Build configuration list for PBXNativeTarget "SPColorWell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7219BD251476DEA400AE298F /* Debug */,
+				7219BD261476DEA400AE298F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7219BCFD1476DEA400AE298F /* Project object */;
+}

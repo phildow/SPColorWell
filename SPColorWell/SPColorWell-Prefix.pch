@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'SPColorWell' target in the 'SPColorWell' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
