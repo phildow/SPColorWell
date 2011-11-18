@@ -1,5 +1,5 @@
 //
-//  SPColorWellAppDelagate.h
+//  NSColor+CSSRGB.h
 //  SPColorWell
 //
 //  Created by Philip Dow on 11/16/11.
@@ -40,21 +40,11 @@
 */
 
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
-@class SPColorWell;
 
-@interface SPColorWellAppDelagate : NSObject <NSApplicationDelegate> {
-@private
-    NSWindow *window;
-    NSTextView *textView;
-    SPColorWell *colorWell;
-    SPColorWell *bgColorWell;
-}
+@interface NSColor (NSColor_CSSRGB)
 
-@property (assign) IBOutlet NSWindow *window;
-@property (assign) IBOutlet NSTextView *textView;
-@property (assign) IBOutlet SPColorWell *bgColorWell;
-@property (assign) IBOutlet SPColorWell *colorWell;
++ (NSColor*) colorWithCSSRGB:(NSString*)rgbString;
 
 @end

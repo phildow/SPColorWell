@@ -1,5 +1,5 @@
 //
-//  SPColorWellAppDelagate.h
+//  SPColorWell.h
 //  SPColorWell
 //
 //  Created by Philip Dow on 11/16/11.
@@ -40,21 +40,31 @@
 */
 
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
-@class SPColorWell;
+@class SPColorPicker;
 
-@interface SPColorWellAppDelagate : NSObject <NSApplicationDelegate> {
+@interface SPColorWell : NSColorWell <NSMenuDelegate> {
 @private
-    NSWindow *window;
-    NSTextView *textView;
-    SPColorWell *colorWell;
-    SPColorWell *bgColorWell;
+    NSString *title;
+    BOOL bordered;
+    BOOL canRemoveColor;
+    
+    SEL removeColorAction;
+    id removeColorTarget;
+    
+    NSMenu *_colorPickerMenu;
+    SPColorPicker *_colorPicker;
 }
 
-@property (assign) IBOutlet NSWindow *window;
-@property (assign) IBOutlet NSTextView *textView;
-@property (assign) IBOutlet SPColorWell *bgColorWell;
-@property (assign) IBOutlet SPColorWell *colorWell;
+@property(readwrite,copy) NSString *title;
+@property(readwrite,getter=isBordered) BOOL bordered;
+@property(readwrite) BOOL canRemoveColor;
+
+@property(readwrite) SEL removeColorAction;
+@property(readwrite,assign) id removeColorTarget;
+
+- (void)drawTitleInside:(NSRect)insideRect;
+- (void)drawWellInside:(NSRect)insideRect;
 
 @end

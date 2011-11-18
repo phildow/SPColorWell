@@ -1,5 +1,5 @@
 //
-//  SPColorWellAppDelagate.h
+//  SPColorPicker.h
 //  SPColorWell
 //
 //  Created by Philip Dow on 11/16/11.
@@ -42,19 +42,42 @@
 
 #import <Cocoa/Cocoa.h>
 
-@class SPColorWell;
 
-@interface SPColorWellAppDelagate : NSObject <NSApplicationDelegate> {
+@interface SPColorPicker : NSView {
 @private
-    NSWindow *window;
-    NSTextView *textView;
-    SPColorWell *colorWell;
-    SPColorWell *bgColorWell;
+    NSArray *colors;
+    BOOL canRemoveColor;
+    NSIndexSet *selectionIndex;
+    
+    SEL action;
+    id target;
+    
+    SEL removeColorAction;
+    id removeColorTarget;
+    
+    NSMutableArray *_trackingAreas;
+    NSIndexSet *_originalSelection;
 }
 
-@property (assign) IBOutlet NSWindow *window;
-@property (assign) IBOutlet NSTextView *textView;
-@property (assign) IBOutlet SPColorWell *bgColorWell;
-@property (assign) IBOutlet SPColorWell *colorWell;
+@property(readwrite,copy) NSArray *colors;
+@property(readwrite,copy) NSIndexSet *selectionIndex;
+@property(readwrite) BOOL canRemoveColor;
+
+@property(readwrite) SEL action;
+@property(readwrite,assign) id target;
+
+@property(readwrite) SEL removeColorAction;
+@property(readwrite,assign) id removeColorTarget;
+
++ (NSSize) proposedFrameSizeForAreaDimension:(CGFloat)dimension;
+
+// used by SPColorWell to remember the current selection prior to popping so that
+// it may be returned if no new selection is made
+- (void) pushCurrentSelection;
+- (void) popCurrentSelection;
+
+- (BOOL) updateSelectionIndexWithColor:(NSColor*)aColor;
+- (void) takeColorFrom:(id)sender;
+- (NSColor*) color;
 
 @end

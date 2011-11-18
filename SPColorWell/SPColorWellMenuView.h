@@ -1,8 +1,8 @@
 //
-//  SPColorWellAppDelagate.h
+//  SPColorWellMenuView.h
 //  SPColorWell
 //
-//  Created by Philip Dow on 11/16/11.
+//  Created by Philip Dow on 11/17/11.
 //  Copyright 2011 Philip Dow / Sprouted. All rights reserved.
 //
 
@@ -39,22 +39,24 @@
 	For non-attribution licensing options refer to http://phildow.net/licensing/
 */
 
-
 #import <Cocoa/Cocoa.h>
 
+@class HighlightingView;
+@class SPColorPicker;
 @class SPColorWell;
 
-@interface SPColorWellAppDelagate : NSObject <NSApplicationDelegate> {
+@interface SPColorWellMenuView : NSView {
 @private
-    NSWindow *window;
-    NSTextView *textView;
-    SPColorWell *colorWell;
-    SPColorWell *bgColorWell;
+    HighlightingView *showColorsView;
+    SPColorPicker *colorPickerView;
+    SPColorWell *colorWell; // don't care for the coupling
+    
+    NSTrackingArea *_colorPickerTrackingArea;
+    NSTrackingArea *_highlightTrackingArea;
 }
 
-@property (assign) IBOutlet NSWindow *window;
-@property (assign) IBOutlet NSTextView *textView;
-@property (assign) IBOutlet SPColorWell *bgColorWell;
-@property (assign) IBOutlet SPColorWell *colorWell;
+@property(assign) HighlightingView *showColorsView;
+@property(assign) SPColorPicker *colorPickerView;
+@property(assign) SPColorWell *colorWell;
 
 @end

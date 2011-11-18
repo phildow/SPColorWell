@@ -13,6 +13,12 @@
 		7219BD1B1476DEA400AE298F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7219BD191476DEA400AE298F /* Credits.rtf */; };
 		7219BD1E1476DEA400AE298F /* SPColorWellAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7219BD1D1476DEA400AE298F /* SPColorWellAppDelegate.m */; };
 		7219BD211476DEA400AE298F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7219BD1F1476DEA400AE298F /* MainMenu.xib */; };
+		7219BD2F1476DEFA00AE298F /* HighlightingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7219BD2E1476DEFA00AE298F /* HighlightingView.m */; };
+		7219BD341476DF0000AE298F /* NSColor+ColorspaceEquality.m in Sources */ = {isa = PBXBuildFile; fileRef = 7219BD311476DF0000AE298F /* NSColor+ColorspaceEquality.m */; };
+		7219BD351476DF0000AE298F /* NSColor+CSSRGB.m in Sources */ = {isa = PBXBuildFile; fileRef = 7219BD331476DF0000AE298F /* NSColor+CSSRGB.m */; };
+		7219BD3C1476DF1100AE298F /* SPColorPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7219BD371476DF1100AE298F /* SPColorPicker.m */; };
+		7219BD3D1476DF1100AE298F /* SPColorWell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7219BD391476DF1100AE298F /* SPColorWell.m */; };
+		7219BD3E1476DF1100AE298F /* SPColorWellMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7219BD3B1476DF1100AE298F /* SPColorWellMenuView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +27,27 @@
 		7219BD0D1476DEA400AE298F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		7219BD0E1476DEA400AE298F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		7219BD0F1476DEA400AE298F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		7219BD121476DEA400AE298F /* SPColorWell-Info.plist */ = {isa = PBXFileReference; path = "SPColorWell-Info.plist"; sourceTree = "<group>"; };
+		7219BD121476DEA400AE298F /* SPColorWell-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SPColorWell-Info.plist"; sourceTree = "<group>"; };
 		7219BD141476DEA400AE298F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7219BD161476DEA400AE298F /* SPColorWell-Prefix.pch */ = {isa = PBXFileReference; path = "SPColorWell-Prefix.pch"; sourceTree = "<group>"; };
+		7219BD161476DEA400AE298F /* SPColorWell-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SPColorWell-Prefix.pch"; sourceTree = "<group>"; };
 		7219BD171476DEA400AE298F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7219BD1A1476DEA400AE298F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		7219BD1C1476DEA400AE298F /* SPColorWellAppDelegate.h */ = {isa = PBXFileReference; path = SPColorWellAppDelegate.h; sourceTree = "<group>"; };
+		7219BD1C1476DEA400AE298F /* SPColorWellAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPColorWellAppDelegate.h; sourceTree = "<group>"; };
 		7219BD1D1476DEA400AE298F /* SPColorWellAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPColorWellAppDelegate.m; sourceTree = "<group>"; };
 		7219BD201476DEA400AE298F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		7219BD2D1476DEFA00AE298F /* HighlightingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighlightingView.h; sourceTree = "<group>"; };
+		7219BD2E1476DEFA00AE298F /* HighlightingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighlightingView.m; sourceTree = "<group>"; };
+		7219BD301476DF0000AE298F /* NSColor+ColorspaceEquality.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+ColorspaceEquality.h"; sourceTree = "<group>"; };
+		7219BD311476DF0000AE298F /* NSColor+ColorspaceEquality.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+ColorspaceEquality.m"; sourceTree = "<group>"; };
+		7219BD321476DF0000AE298F /* NSColor+CSSRGB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+CSSRGB.h"; sourceTree = "<group>"; };
+		7219BD331476DF0000AE298F /* NSColor+CSSRGB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+CSSRGB.m"; sourceTree = "<group>"; };
+		7219BD361476DF1100AE298F /* SPColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPColorPicker.h; sourceTree = "<group>"; };
+		7219BD371476DF1100AE298F /* SPColorPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPColorPicker.m; sourceTree = "<group>"; };
+		7219BD381476DF1100AE298F /* SPColorWell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPColorWell.h; sourceTree = "<group>"; };
+		7219BD391476DF1100AE298F /* SPColorWell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPColorWell.m; sourceTree = "<group>"; };
+		7219BD3A1476DF1100AE298F /* SPColorWellMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPColorWellMenuView.h; sourceTree = "<group>"; };
+		7219BD3B1476DF1100AE298F /* SPColorWellMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPColorWellMenuView.m; sourceTree = "<group>"; };
+		7219BD3F1476DF2500AE298F /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.txt; path = SPColorWell/README.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +65,7 @@
 		7219BCFB1476DEA400AE298F = {
 			isa = PBXGroup;
 			children = (
+				7219BD3F1476DF2500AE298F /* README.txt */,
 				7219BD101476DEA400AE298F /* SPColorWell */,
 				7219BD091476DEA400AE298F /* Frameworks */,
 				7219BD071476DEA400AE298F /* Products */,
@@ -84,6 +104,18 @@
 			children = (
 				7219BD1C1476DEA400AE298F /* SPColorWellAppDelegate.h */,
 				7219BD1D1476DEA400AE298F /* SPColorWellAppDelegate.m */,
+				7219BD381476DF1100AE298F /* SPColorWell.h */,
+				7219BD391476DF1100AE298F /* SPColorWell.m */,
+				7219BD361476DF1100AE298F /* SPColorPicker.h */,
+				7219BD371476DF1100AE298F /* SPColorPicker.m */,
+				7219BD3A1476DF1100AE298F /* SPColorWellMenuView.h */,
+				7219BD3B1476DF1100AE298F /* SPColorWellMenuView.m */,
+				7219BD301476DF0000AE298F /* NSColor+ColorspaceEquality.h */,
+				7219BD311476DF0000AE298F /* NSColor+ColorspaceEquality.m */,
+				7219BD321476DF0000AE298F /* NSColor+CSSRGB.h */,
+				7219BD331476DF0000AE298F /* NSColor+CSSRGB.m */,
+				7219BD2D1476DEFA00AE298F /* HighlightingView.h */,
+				7219BD2E1476DEFA00AE298F /* HighlightingView.m */,
 				7219BD1F1476DEA400AE298F /* MainMenu.xib */,
 				7219BD111476DEA400AE298F /* Supporting Files */,
 			);
@@ -167,6 +199,12 @@
 			files = (
 				7219BD181476DEA400AE298F /* main.m in Sources */,
 				7219BD1E1476DEA400AE298F /* SPColorWellAppDelegate.m in Sources */,
+				7219BD2F1476DEFA00AE298F /* HighlightingView.m in Sources */,
+				7219BD341476DF0000AE298F /* NSColor+ColorspaceEquality.m in Sources */,
+				7219BD351476DF0000AE298F /* NSColor+CSSRGB.m in Sources */,
+				7219BD3C1476DF1100AE298F /* SPColorPicker.m in Sources */,
+				7219BD3D1476DF1100AE298F /* SPColorWell.m in Sources */,
+				7219BD3E1476DF1100AE298F /* SPColorWellMenuView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +319,7 @@
 				7219BD261476DEA400AE298F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,10 +1,11 @@
 //
-//  SPColorWellAppDelagate.h
+//  NSColor+RGBColorspaceEquality.h
 //  SPColorWell
 //
 //  Created by Philip Dow on 11/16/11.
 //  Copyright 2011 Philip Dow / Sprouted. All rights reserved.
 //
+//  From the Mailing List
 
 /*
 
@@ -40,21 +41,11 @@
 */
 
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
-@class SPColorWell;
 
-@interface SPColorWellAppDelagate : NSObject <NSApplicationDelegate> {
-@private
-    NSWindow *window;
-    NSTextView *textView;
-    SPColorWell *colorWell;
-    SPColorWell *bgColorWell;
-}
+@interface NSColor (NSColor_ColorspaceEquality)
 
-@property (assign) IBOutlet NSWindow *window;
-@property (assign) IBOutlet NSTextView *textView;
-@property (assign) IBOutlet SPColorWell *bgColorWell;
-@property (assign) IBOutlet SPColorWell *colorWell;
+- (BOOL) isEqualToColor:(NSColor*)inColor colorSpace:(NSString*)inColorSpace;
 
 @end

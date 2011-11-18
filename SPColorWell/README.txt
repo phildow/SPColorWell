@@ -1,7 +1,4 @@
-//
-//  SPColorWellAppDelagate.h
-//  SPColorWell
-//
+
 //  Created by Philip Dow on 11/16/11.
 //  Copyright 2011 Philip Dow / Sprouted. All rights reserved.
 //
@@ -39,22 +36,12 @@
 	For non-attribution licensing options refer to http://phildow.net/licensing/
 */
 
-
-#import <Cocoa/Cocoa.h>
-
-@class SPColorWell;
-
-@interface SPColorWellAppDelagate : NSObject <NSApplicationDelegate> {
-@private
-    NSWindow *window;
-    NSTextView *textView;
-    SPColorWell *colorWell;
-    SPColorWell *bgColorWell;
-}
-
-@property (assign) IBOutlet NSWindow *window;
-@property (assign) IBOutlet NSTextView *textView;
-@property (assign) IBOutlet SPColorWell *bgColorWell;
-@property (assign) IBOutlet SPColorWell *colorWell;
-
-@end
+/*
+    SPColorWell implements an iWork-esque color well and pop-up color picker for
+    changing the color of an arbitrary selection. Drop the source files into your
+    project and add a custom NSView to your NIB file, changing its class to SPColorWell.
+    
+    The only glue work you need to worry about is mediating the color displayed
+    in the color well and the color of the current selection in the view with which
+    it is associated. The app delegate demonstrates how to do this with an NSTextView.
+*/
