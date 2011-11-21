@@ -98,7 +98,6 @@
 @synthesize title;
 @synthesize canRemoveColor;
 
-@synthesize bordered;
 @synthesize borderType;
 
 @synthesize removeColorAction;
@@ -111,7 +110,6 @@
         // Initialization code here.
         self.color = [NSColor colorWithCalibratedWhite:0. alpha:1.];
 		self.borderType = NSBezelBorder;
-        self.bordered = YES;
     }
     
     return self;
@@ -123,7 +121,6 @@
     if (self) {
         self.color = [NSColor colorWithCalibratedWhite:0. alpha:1.];
 		self.borderType = NSBezelBorder;
-        self.bordered = YES;
     }
     
     return self;
@@ -146,7 +143,7 @@
     NSRect bds = [self bounds];
     NSRect colorArea = bds;
     
-    if ( self.isBordered ) {
+	if ( self.borderType != NSNoBorder )  {
         // frame and internal gradient
         
         NSRect frameArea = bds;

@@ -49,7 +49,6 @@
     NSString *title;
     BOOL canRemoveColor;
 	
-	BOOL bordered;
 	NSBorderType borderType;
     
     SEL removeColorAction;
@@ -62,7 +61,6 @@
 @property(readwrite,copy) NSString *title;
 @property(readwrite) BOOL canRemoveColor;
 
-@property(readwrite,getter=isBordered) BOOL bordered;
 @property(readwrite) NSBorderType borderType;
 
 // suported borderType values: NSNoBorder / NSLineBorder / NSBezelBorder
