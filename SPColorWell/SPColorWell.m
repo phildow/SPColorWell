@@ -147,28 +147,37 @@
         // frame and internal gradient
         
         NSRect frameArea = bds;
-        frameArea.size.height-=1;
-        frameArea.origin.y+=1;
-
         NSRect gradientArea = NSInsetRect(bds, 1, 1);
-        gradientArea.origin.y += 1;
-        gradientArea.size.height-=1;
         
-        NSShadow *inset = [[[NSShadow alloc] init] autorelease];
-        [inset setShadowColor:[NSColor colorWithCalibratedWhite:0.78 alpha:1.]];
-        [inset setShadowOffset:NSMakeSize(0,-1)];
-        [inset setShadowBlurRadius:0.];
+		if ( self.borderType == NSBezelBorder ) {
+			// make room for single pixel shadow
+			frameArea.size.height-=1;
+			frameArea.origin.y+=1;
+			
+			gradientArea.origin.y += 1;
+			gradientArea.size.height-=1;
+			
+			NSShadow *inset = [[[NSShadow alloc] init] autorelease];
+			[inset setShadowColor:[NSColor colorWithCalibratedWhite:0.78 alpha:1.]];
+			[inset setShadowOffset:NSMakeSize(0,-1)];
+			[inset setShadowBlurRadius:0.];
+			
+			
+			[[NSGraphicsContext currentContext] saveGraphicsState];
+			[inset set];
         
-        
-        [[NSGraphicsContext currentContext] saveGraphicsState];
-        [inset set];
-        
-        // frame
-        [[NSColor colorWithCalibratedWhite:0.45 alpha:1.0] set];
-        NSRectFill(frameArea);
-        
-        [[NSGraphicsContext currentContext] restoreGraphicsState];
-        
+			// frame
+			[[NSColor colorWithCalibratedWhite:0.45 alpha:1.0] set];
+			NSRectFill(frameArea);
+			
+			[[NSGraphicsContext currentContext] restoreGraphicsState];
+        }
+		else {
+			// frame
+			[[NSColor colorWithCalibratedWhite:0.45 alpha:1.0] set];
+			NSRectFill(frameArea);
+		}
+		
         // background fill with single pixel bottom shadow
         NSGradient *background = [[[NSGradient alloc] initWithStartingColor:[NSColor colorWithCalibratedWhite:0.94 alpha:1.0] 
                 endingColor:[NSColor colorWithCalibratedWhite:0.7 alpha:1.0]] autorelease];
