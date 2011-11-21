@@ -47,8 +47,10 @@
 @interface SPColorWell : NSColorWell <NSMenuDelegate> {
 @private
     NSString *title;
-    BOOL bordered;
     BOOL canRemoveColor;
+	
+	BOOL bordered;
+	NSBorderType borderType;
     
     SEL removeColorAction;
     id removeColorTarget;
@@ -58,8 +60,12 @@
 }
 
 @property(readwrite,copy) NSString *title;
-@property(readwrite,getter=isBordered) BOOL bordered;
 @property(readwrite) BOOL canRemoveColor;
+
+@property(readwrite,getter=isBordered) BOOL bordered;
+@property(readwrite) NSBorderType borderType;
+
+// suported borderType values: NSNoBorder / NSLineBorder / NSBezelBorder
 
 @property(readwrite) SEL removeColorAction;
 @property(readwrite,assign) id removeColorTarget;

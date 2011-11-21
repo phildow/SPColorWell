@@ -96,8 +96,10 @@
 @implementation SPColorWell
 
 @synthesize title;
-@synthesize bordered;
 @synthesize canRemoveColor;
+
+@synthesize bordered;
+@synthesize borderType;
 
 @synthesize removeColorAction;
 @synthesize removeColorTarget;
@@ -108,6 +110,7 @@
     if (self) {
         // Initialization code here.
         self.color = [NSColor colorWithCalibratedWhite:0. alpha:1.];
+		self.borderType = NSBezelBorder;
         self.bordered = YES;
     }
     
@@ -119,6 +122,7 @@
     self = [super initWithCoder:aDecoder];
     if (self) {
         self.color = [NSColor colorWithCalibratedWhite:0. alpha:1.];
+		self.borderType = NSBezelBorder;
         self.bordered = YES;
     }
     
