@@ -130,7 +130,7 @@
 {
     [_colorPickerMenu release], _colorPickerMenu = nil;
     [_colorPicker release], _colorPicker = nil;
-    self.color = nil;
+    [self.color release];
     self.title = nil;
     
     [super dealloc];
