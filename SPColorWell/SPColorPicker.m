@@ -259,8 +259,8 @@ static NSArray * SPColorPickerDefaultColorsInCSSRGB()
     
     return [NSColor colorWithCalibratedWhite:1. alpha:1.];
     
-    NSLog(@"%@",rgbColor);
-    return nil;
+//    NSLog(@"%@",rgbColor);
+//    return nil;
 }
 
 - (NSRect) frameForAreaAtRow:(NSInteger)rowIndex column:(NSInteger)columnIndex {
